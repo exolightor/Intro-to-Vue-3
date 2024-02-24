@@ -31,7 +31,7 @@
             </ul>
 
             <ul>
-              <li v-for="size in sizes"> {{size}} </li>
+              <li v-for="(size, index) in sizes" :key="index"> {{size}} </li>
             </u>
 
           </div>
