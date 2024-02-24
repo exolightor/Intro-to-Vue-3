@@ -15,6 +15,9 @@ const app = Vue.createApp({
     methods: {
         addToCart(){
             this.cart++;
+        },
+        removeFromCart(){
+            this.cart > 0 ? this.cart-- : false;
         }
     }
 })
