@@ -18,6 +18,9 @@ const app = Vue.createApp({
         },
         removeFromCart(){
             this.cart > 0 ? this.cart-- : false;
+        },
+        clearCart(){
+            this.cart = 0;
         }
     }
 })
